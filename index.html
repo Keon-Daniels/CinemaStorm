@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<!--Notes on What to work on for the website-->
+<!--For Database with Ideas, ask for genre, name, and idea-->
+<!--For Free Version, allow filters for ideas-->
+<!--Don't conform, submit your art form with CinemaStorm.-->
+<!--Terms and Conditions - IMPORTANT NOTICE-->
+<html>
+
+<head>
+	<title>CinemaStorm</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123439828-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-123439828-1');
+	</script>
+
+	<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyCm7SJwFkvtYYdY83hb7d2AHZhw_xjx9Hc",
+			authDomain: "cinemastorm-5cb63.firebaseapp.com",
+			databaseURL: "https://cinemastorm-5cb63.firebaseio.com",
+			projectId: "cinemastorm-5cb63",
+			storageBucket: "",
+			messagingSenderId: "1055465518695"
+		};
+		firebase.initializeApp(config);
+	</script>
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="index is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<h1 id="logo"><a href="index.html"> <span>CinemaStorm</span></a></h1>
+			<nav id="nav">
+				<ul>
+					<!--Link browse button to ideas, and force people to sign in or sign up first.-->
+					<li class="current"><a href="newRead.html">Browse</a></li>
+					<li class="current"><a href="newPosts.html">Post</a></li>
+					<li class="submenu">
+						<a href="#">Menu</a>
+						<ul>
+							<li><a href="left-sidebar.html">About Us</a></li>
+							<li><a href="right-sidebar.html">FAQ</a></li>
+							<li><a href="no-sidebar.html">Requirements</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</li>
+					<li><a href="#" id="signUp" class="button primary">Sign In With Google</a></li>
+					<li><a href="#" id="signOut" class="button primary">Sign Out</a></li>
+					<li><a href="newlog-in.html" id="sign" class="button primary">Sign Up</a></li>
+
+					<!--Make Database for Ideas paired with Users & Dropdown Menu-->
+					<!--Make a Sign In Button where the user and password match the ones in the database-->
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Banner -->
+		<section id="banner">
+
+			<!--
+						".inner" is set up as an inline-block so it automatically expands
+						in both directions to fit whatever's inside it. This means it won't
+						automatically wrap lines, so be sure to use line breaks where
+						appropriate (<br />).
+					-->
+			<div class="inner">
+
+				<header>
+					<h2>CinemaStorm</h2>
+				</header>
+				<p>This is <strong>CinemaStorm</strong>.
+					<br /> Be free to create
+					<br /> by <a>Keon & Kristen</a>.</p>
+				<footer>
+					<ul class="buttons stacked">
+						<li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
+					</ul>
+				</footer>
+
+			</div>
+
+		</section>
+
+		<!-- Main -->
+		<article id="main">
+
+			<header class="special container">
+				<span class="icon fa-film"></span>
+				<h2><strong>Seize</strong> the opportunity to fulfill your dreams.
+					<br /> Get the chance to make a <strong>movie</strong>.
+				</h2>
+				<p>
+					<br /> You can be part of a creative community with a free account. Enter into a monthly pitch competition with a premium subscription (Coming Soon).
+					<br />
+				</p>
+			</header>
+
+			<!-- One -->
+			<section class="wrapper style2 container special-alt">
+				<div class="row gtr-50">
+					<div class="col-8 col-12-narrower">
+
+						<header>
+							<h2>Anyone <strong>experienced and interested</strong> in film can participate in this creative space. Just submit your movie ideas down below! </h2>
+						</header>
+						<p>Producers and other executives are not the only people with good ideas. Regular citizens that love film often don’t get the chance to create the things they want. Good ideas are hard to come by, just like the opportunity to fulfill your dreams.
+							Both goals can be realized, with CinemaStorm.
+						</p>
+						<footer>
+							<ul class="buttons">
+								<li><a href="newlog-in.html" class="button">Create Your Account</a></li>
+							</ul>
+						</footer>
+
+					</div>
+					<div class="col-4 col-12-narrower imp-narrower">
+
+						<ul class="featured-icons">
+							<li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span>
+							</li>
+							<li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span>
+							</li>
+							<li><span class="icon fa-laptop"><span class="label">Feature 3</span></span>
+							</li>
+							<li><span class="icon fa-play"><span class="label">Feature 4</span></span>
+							</li>
+							<li><span class="icon fa-ticket"><span class="label">Feature 5</span></span>
+							</li>
+							<li><span class="icon fa-video-camera"><span class="label">Feature 6</span></span>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</section>
+
+			<!-- Two -->
+			<section class="wrapper style1 container special">
+				<div class="row">
+					<div class="col-4 col-12-narrower">
+
+						<section>
+							<span class="icon featured fa-check"></span>
+							<header>
+								<h3>What the app will do for you</h3>
+							</header>
+							<p>This app will allow people to showcase their creativity for an opportunity to create a movie with producers based on their idea.</p>
+						</section>
+
+					</div>
+					<div class="col-4 col-12-narrower">
+
+						<section>
+							<span class="icon featured fa-check"></span>
+							<header>
+								<h3>How we help people and Movie Producers</h3>
+							</header>
+							<p>Prospective professionals can be exposed to the industry. Executives will consistently see new ideas.
+							</p>
+						</section>
+
+					</div>
+					<div class="col-4 col-12-narrower">
+
+						<section>
+							<span class="icon featured fa-check"></span>
+							<header>
+								<h3>Who are we helping</h3>
+							</header>
+							<p>Those interested in film can fulfill their goals.</p>
+						</section>
+
+					</div>
+				</div>
+			</section>
+
+			<!-- Three -->
+			<section class="wrapper style3 container special">
+
+				<header class="major">
+					<h2>Why should I <strong>sign up?</strong></h2>
+				</header>
+	</div>
+	</div>
+	<div class="row">
+		<div class="col-6 narrower">
+
+			<section>
+				<a class="image featured"><img src="http://wininlife.com/wp-content/uploads/2016/08/servlet.png" alt="" /></a>
+				<header>
+					<h3>Free Version</h3>
+				</header>
+				<p>This version allows people with similar interests, to come together in groups in order to collaborate and make their own movies.</p>
+			</section>
+
+		</div>
+		<div class="col-6 narrower">
+
+			<section>
+				<a class="image featured"><img src="https://images.pexels.com/photos/938965/pexels-photo-938965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" /></a>
+				<header>
+					<h3>Premium Version, soon to come</h3>
+				</header>
+				<p>Once this version arrives, people who are more invested in turning their idea into a bigger movie have the chance to invest in their idea. These people will compete for a larger opportunity in order to produce a bigger movie.</p>
+			</section>
+
+		</div>
+	</div>
+
+	<footer class="major">
+		<ul class="buttons">
+			<li><a href="left-sidebar.html" class="button">See More</a></li>
+		</ul>
+	</footer>
+
+	</section>
+
+	</article>
+
+	<!-- CTA -->
+	<section id="cta">
+
+		<header>
+			<h2>Ready to do <strong>something</strong>?</h2>
+			<p>Either sign up or sign in to submit your idea.</p>
+		</header>
+		<footer>
+			<ul class="buttons">
+				<li><a href="newlog-in.html" class="button primary">Sign up</a></li>
+				<li><a href="newsign-up.html" class="button" id="">Sign in</a></li>
+			</ul>
+		</footer>
+
+	</section>
+
+	<!-- Footer -->
+	<footer id="footer">
+
+		<ul class="icons">
+			<li><a href="https://twitter.com/?lang=en" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="https://www.facebook.com/" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+			<li><a href="https://plus.google.com/discover" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+			<li><a href="https://github.com/" class="icon circle fa-github"><span class="label">Github</span></a></li>
+			<li><a href="https://dribbble.com/" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+		</ul>
+
+		<ul class="copyright">
+			<li>&copy; CinemaStorm</li>
+			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		</ul>
+
+	</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

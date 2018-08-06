@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Idea Submission</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123439828-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-123439828-1');
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCm7SJwFkvtYYdY83hb7d2AHZhw_xjx9Hc",
+            authDomain: "cinemastorm-5cb63.firebaseapp.com",
+            databaseURL: "https://cinemastorm-5cb63.firebaseio.com",
+            projectId: "cinemastorm-5cb63",
+            storageBucket: "",
+            messagingSenderId: "1055465518695"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="contact is-preload">
+    <div id="page-wrapper1">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a href="index.html"> <span>CinemaStorm</span></a></h1>
+            <nav id="nav">
+                <ul>
+                    <!--Link browse button to ideas, and force people to sign in or sign up first.-->
+                    <li><a class="nav-item nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-item nav-link active" href="newPosts.html">Post Ideas</a></li>
+                    <li><a class="nav-item nav-link" href="newRead.html">Browse Ideas</a></li>
+                    <li class="submenu">
+                        <a href="#">Menu</a>
+                        <ul>
+                            <li><a href="left-sidebar.html">About Us</a></li>
+                            <li><a href="right-sidebar.html">FAQ</a></li>
+                            <li><a href="no-sidebar.html">Requirements</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" id="signUp" class="button primary">Sign In</a></li>
+                    <li><a href="#" id="signOut" class="button primary">Sign Out</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+
+
+                    <!-- TODO: Have form below send form data to firebase -->
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                            <h1 class="display-4">Post Ideas Here</h1>
+                            <p class="lead">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="postingTitle">Posting Title</label>
+                                        <input type="text" class="form-control" id="postingTitle">
+                                        <small class="form-text text-muted">Make a title that really grabs peoples attention!</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="postingDescription">Posting Description</label>
+                                        <textarea type="password" class="form-control" id="postingDescription" rows="3"></textarea>
+                                    </div>
+                                    <!--Make sure that when user is logged in, this part is already filled in-->
+                                    <div class="form-group" id="email">
+                                        <label for="postingEmail">Your Email</label>
+                                        <input type="text" class="form-control" id="postingEmail" />
+                                        <small class="form-text text-muted">Enter your email here</small>
+                                    </div>
+                                    <button type="submit" class="special" class="btn btn-primary" id='submit'>Submit</button>
+                                </form>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- TODO: Have form above send form data to firebase -->
+
+
+
+                <!-- Footer -->
+
+
+            </div>
+        </div>
+        <footer id="footer1">
+
+            <ul class="icons">
+                <li><a href="https://twitter.com/?lang=en" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.facebook.com/" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="https://plus.google.com/discover" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+                <li><a href="https://github.com/" class="icon circle fa-github"><span class="label">Github</span></a></li>
+                <li><a href="https://dribbble.com/" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; CinemaStorm</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.scrollgress.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main2.js"></script>
+
+</body>
+
+</html>

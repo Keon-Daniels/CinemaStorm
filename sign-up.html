@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Sign Up Page
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main2.css" />
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCm7SJwFkvtYYdY83hb7d2AHZhw_xjx9Hc",
+            authDomain: "cinemastorm-5cb63.firebaseapp.com",
+            databaseURL: "https://cinemastorm-5cb63.firebaseio.com",
+            projectId: "cinemastorm-5cb63",
+            storageBucket: "",
+            messagingSenderId: "1055465518695"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+
+<body class="index is-preload">
+    <div id="page-wrapper">
+        <header id="header" class="alt">
+            <h1 id="logo"><a href="index.html"> <span>CinemaStorm</span></a></h1>
+            <nav id="nav">
+                <ul>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Menu</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <ul>
+                                <li><a href="left-sidebar.html">About Us</a></li>
+                                <li><a href="right-sidebar.html">FAQ</a></li>
+                                <li><a href="no-sidebar.html">Requirements</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Make Database for Ideas paired with Users & Dropdown Menu-->
+                    <!--Make a Sign In Button where the user and password match the ones in the database-->
+                </ul>
+            </nav>
+        </header>
+
+        <button id="info"> Display Current User Info </button>
+        <p>The button above will show if you are logged on once you create an account. If you don't have an account yet, you can either sign in with Google at the home page, or create an account with your own desired email & password.</p>
+        <div id="infoHolder">
+
+        </div>
+
+        Email: <input type="text" name="user" id="user" placeholder="johndoe@email.com" /> Password: <input type="password" value="" id="myInput" placeholder="password">
+        <input type="checkbox" onclick="myFunction()">Show Password<br></br>
+        
+        <button id="logbtn">Log In</button>
+        <button id="acctbtn"> Create Account </button>
+        <button id="logout">Log Out</button>
+        <button id="reset">Reset Password</button>
+        In order to reset your password, please enter your email in the input and press reset password.
+        
+
+
+</html>
+
+
+</p>
+<script src="assets/js/main4.js"></script>
+</body>
+
+</html>

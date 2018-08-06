@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ideas Page</title>
+   <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+ 
+
+  <!-- TODO: Initialize Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCm7SJwFkvtYYdY83hb7d2AHZhw_xjx9Hc",
+      authDomain: "cinemastorm-5cb63.firebaseapp.com",
+      databaseURL: "https://cinemastorm-5cb63.firebaseio.com",
+      projectId: "cinemastorm-5cb63",
+      storageBucket: "",
+      messagingSenderId: "1055465518695"
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+
+<body>
+  <!-- navbar below -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+        CinemaStorm
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <li><a class="nav-item nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-item nav-link" href="posts.html">Post Ideas</a></li>
+        <li><a class="nav-item nav-link active" href="read.html">Browse Ads</a></li>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Menu</button>
+      <div id="myDropdown" class="dropdown-content">
+        <ul>
+          <li><a href="left-sidebar.html">About Us</a></li>
+          <li><a href="right-sidebar.html">FAQ</a></li>
+          <li><a href="no-sidebar.html">Requirements</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <!-- TODO:postings should appear in the div below -->
+        <div id="postings">
+
+        </div>
+        <!-- TODO:postings should appear in the div above -->
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.dropotron.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main3.js"></script>
+</body>
+
+</html>

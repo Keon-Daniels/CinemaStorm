@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Log In Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123439828-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-123439828-1');
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCm7SJwFkvtYYdY83hb7d2AHZhw_xjx9Hc",
+            authDomain: "cinemastorm-5cb63.firebaseapp.com",
+            databaseURL: "https://cinemastorm-5cb63.firebaseio.com",
+            projectId: "cinemastorm-5cb63",
+            storageBucket: "",
+            messagingSenderId: "1055465518695"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="contact is-preload">
+    <div id="page-wrapper2">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a href="index.html"> <span>CinemaStorm</span></a></h1>
+            <nav id="nav">
+                <ul>
+                    <!--Link browse button to ideas, and force people to sign in or sign up first.-->
+                    <li class="current"><a href="newRead.html">Browse</a></li>
+                    <li class="submenu">
+                        <a href="#">Menu</a>
+                        <ul>
+                            <li><a href="left-sidebar.html">About Us</a></li>
+                            <li><a href="right-sidebar.html">FAQ</a></li>
+                            <li><a href="no-sidebar.html">Requirements</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" id="signUp" class="button primary">Sign In</a></li>
+                    <li><a href="#" id="signOut" class="button primary">Sign Out</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+
+        <div id="page-wrapper2">
+            <div id="userBox">
+                <br><br> Email: <input type="text" name="user" id="user" placeholder="johndoe@email.com" /> Password: <input type="password" value="" id="myInput" placeholder="password">
+                <br>
+                <input type="checkbox" onclick="myFunction()" id="password">Show Password<br></br>
+
+
+                <button id="logbtn">Log In</button>
+
+                <!--<button id="logout">Log Out</button><br><br>-->
+                <!--<button id="acctbtn"> Create Account </button>-->
+                <button id="reset">Reset Password</button>
+                <br>
+                <p id="resetOption">In order to reset your password, please enter your email in the input and press reset password.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+
+            <ul class="icons">
+                <li><a href="https://twitter.com/?lang=en" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.facebook.com/" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="https://plus.google.com/discover" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+                <li><a href="https://github.com/" class="icon circle fa-github"><span class="label">Github</span></a></li>
+                <li><a href="https://dribbble.com/" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; CinemaStorm</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+
+        </footer>
+
+
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.scrollgress.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main5.js"></script>
+
+</body>
+
+</html>
