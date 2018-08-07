@@ -15,6 +15,7 @@ function getPostings() {
                 <p class="card-text">${data[key].description}</p>
                 <p class="card-text"> <a href="mailto:${data[key].email}"> Email: ${data[key].email}</a> </p>
                 <p class="card-text"> Time Posted: ${data[key].time} </a> </p>
+                <div class="fb-share-button" data-href="https://cinemastorm.site/post-Page.html?id=${key}" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://cinemastorm.site/post-Page.html?id=${key}" class="fb-xfbml-parse-ignore">Share Your Idea on Facebook</a></div>
                 <button class = "vote upVote" >👍 ${Object.keys(data[key].upVote).length}</button>
                 <button class = "vote downVote">👎 ${Object.keys(data[key].downVote).length}</button>
               </div>
