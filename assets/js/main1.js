@@ -172,6 +172,5 @@ function myFunction() {
 let sendButton = document.querySelector('#sendMessage')
 sendButton.addEventListener('click', (e) => {
 	window.open('mailto:keongi46@gmail.com');
-	window.open('mailto:kwallace21@cgps.org');
 })
 
